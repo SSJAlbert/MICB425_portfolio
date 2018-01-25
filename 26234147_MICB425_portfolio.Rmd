@@ -1,6 +1,35 @@
 ---
 title: "MICB425 portfolio"
 author: "Albert Chang (26234147)"
-date: "January 19, 2018"
-output: html_document
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: html_document 
+toc: true
 ---
+
+# Example header 1
+## Example header 2
+### Example header 3
+
+line 1  
+line 2
+line 1
+
+line 2
+
+
+[text](https://github.com/EDUCE-UBC/MICB425)
+
+
+<!-- ![Image title](~/Documents/MICB425_portfolio/image.png){width=50%} -->
+
+<!--```{r}
+Code, code, code
+```--!>
+
+<!-- #Create 2 lists of numbers -->
+<!-- list1 = c(1,2,3) -->
+<!-- list2 = c(4,5,6) -->
+
+<!-- #Plot list1 vs. list2 -->
+<!-- plot(x=list1, y=list2) -->
+
