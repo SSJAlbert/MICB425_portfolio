@@ -62,7 +62,7 @@ Detail the code you used to create, initialize, and push your portfolio repo to 
 
 ### RMarkdown pretty PDF challenge
 Paste your code from the in-class activity of recreating the example PDF.
-
+      - Separate file (See Assignment_3.Rmd)
 
 
 ## Origins and Earth Systems
@@ -199,3 +199,4 @@ Utilize this space to include a bibliography of any literature you want associat
 An example for Whitman and Wiebe (1998) has been included below.
 
 Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+

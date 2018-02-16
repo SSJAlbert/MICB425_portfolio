@@ -59,6 +59,11 @@ metadata %>%
 metadata %>% 
   transmute(N2O_uM = N2O_nM/1000)
 
+#Would overwrite the old data if named the same name (though your data table
+# is unchanged)
+metadata %>% 
+  transmute(N2O_nM = N2O_nM/1000)
+
 
 #Plotting
 metadata %>% 
@@ -74,4 +79,39 @@ View(metadata %>%
       select(N2O_nM, Std_N2O_uM, Std_N2O_nM, CH4_uM, CH4_nM,
          Std_CH4_uM, CH4_nM))
 
+#DAY 2
+library(tidyverse)
+data %>% function
+function(data)
 
+metadata %>% 
+  select(O2_uM)
+
+#Select variables with O2 or oxygen in the name 
+metadata %>% 
+  select(matches("O2|oxygen"))
+
+#Filter rows (samples) where oxygen = 0
+metadata %>% 
+  filter(O2_uM == 0)
+
+#Select depths where oxygen = 0
+metadata %>% 
+  filter(O2_uM == 0)
+  select(Depth_m)
+  
+#Same code without knowing name of columns
+metadata %>% 
+  select(matches("CH4|methane"))
+metadata %>% 
+  select(matches("temp"))
+
+#Exclude units from cells or they will be treated as words -> Will not be able
+# to take the average/do mathematical operations on them
+
+#Having each function on separate line makes it more readable
+#Note: "_" and "&" have the same function
+metadata %>% 
+  filter(CH4_nM > 100) %>% 
+  filter(Temperature_C < 10) %>% 
+  select(Depth_m, CH4_nM, Temperature_C)
