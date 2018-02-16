@@ -5,29 +5,33 @@ date: "February 16, 2018"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-library(tidyverse)
 source("https://bioconductor.org/biocLite.R")
 biocLite("phyloseq")
+library(phyloseq)
+load("phyloseq_object.RData")
+
+
+#Exercise 1
+
+
+```{r echo=TRUE}
+
+library(tidyverse)
 library(phyloseq)
 load("phyloseq_object.RData")
 
 read.table(file="Saanich.metadata2.txt")
 metadata = read.table(file="Saanich.metadata2.txt", header=TRUE, row.names=1, sep="\t", na.strings=c("NAN","NA","."))
 
-
-#Exercise 1
-```{}
 ggplot(metadata, aes(y=Depth_m, x=PO4_uM)) +
   geom_point(shape=17,color="purple",size=2)
 ```  
 
 #Exercise 2
 
-```{}
+```{r echo=TRUE}
+
 Temp_f = metadata %>% 
   select(Temperature_C, Depth_m) %>% 
   mutate(Temperature_F = (Temperature_C*(9/5)+32))
@@ -38,7 +42,8 @@ ggplot(Temp_f, aes(x=Temperature_F, y=Depth_m)) +
 
 #Exercise 3
 
-```{}
+```{r echo=TRUE}
+
 load("phyloseq_object.RData")
 physeq_percent = transform_sample_counts(physeq, function(x) 100 * x/sum(x))
 plot_bar(physeq_percent, fill="Phylum") +
@@ -50,7 +55,8 @@ plot_bar(physeq_percent, fill="Phylum") +
 
 #Exercise 4
 
-```{}
+```{r echo=TRUE}
+
 uM_nutrients = metadata %>% 
   select(O2_uM, PO4_uM, SiO2_uM, NO3_uM, NH4_uM, NO2_uM, Depth_m)
 
