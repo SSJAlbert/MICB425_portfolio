@@ -1,6 +1,6 @@
 ---
 title: "MICB425 Portfolio - Microbial Ecological Genomics: From Genomes to Biomes, Spring 2018"
-author: "Student First Name, Preferred Name, Last Name, Student ID"
+author: "Albert Chang (26234147)"
 date: "version `r format(Sys.time(), '%B %d, %Y')`"
 output: 
   html_document:
@@ -51,7 +51,8 @@ The remaining second level headers (##) are for separating data science Friday, 
 ### Installation check
 Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
 
-Use this space to include your installation screenshots.
+Use this space to include your installation screenshots.  
+**Sent via e-mail**
 
 
 
@@ -61,8 +62,8 @@ Detail the code you used to create, initialize, and push your portfolio repo to 
 
 
 ### RMarkdown pretty PDF challenge
-Paste your code from the in-class activity of recreating the example PDF.
-      - Separate file (See Assignment_3.Rmd)
+Paste your code from the in-class activity of recreating the example PDF.  
+      **Separate file (See Assignment_3.Rmd)**
 
 
 ## Origins and Earth Systems
@@ -71,7 +72,7 @@ The template for the first Evidence Worksheet has been included here. The first 
 
 You can copy-paste in the answers you recorded when working through the evidence worksheet into this portfolio template. 
 
-As you include Evidence worksheets and Problem sets in the future, ensure that you delineate Questions/Learning Objectives/etc. by using headers that are 4th level and greater. This will still create header markings when you render (knit) the document, but will exclude these levels from the Table of Contents. That's a good thing. You don't' want to clutter the Table of Contents too much.
+As you include Evidence worksheets and Problem sets in the future, ensure that you delineate Questions/Learning Objectives/etc. by using headers that are 4th level and greater. This will still create header markings when you render (knit) the document, but will exclude these levels from the Table of Contents. That's a good thing. You don't want to clutter the Table of Contents too much.
 
 [Whitman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
 
@@ -137,10 +138,10 @@ Describe the numerical abundance of microbial life in relation to the ecology an
 
 * What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?  
 
- Autotroph: "Self-nourishing"
-             Fix inorganic carbon (CO2)  
- Heterotroph: assimilate organic carbon  
- Lithotroph: use inorganic substrates (carbon) for energy source    
+    - Autotroph: "Self-nourishing"  
+                  - Fix inorganic carbon (CO~2~)  
+    - Heterotroph: assimilate organic carbon  
+    - Lithotroph: use inorganic substrates (carbon) for energy source    
 
 * Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?  
 
@@ -154,7 +155,7 @@ Describe the numerical abundance of microbial life in relation to the ecology an
       - 57-77 km above Earth's surface (a bit above Mt. Everest)  
       - Limiting factor is radiation  
 
-* Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth’s biosphere measured in km?  
+* Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth's biosphere measured in km?  
 
       - 61-81 km = range of Earth's biosphere
 
@@ -191,6 +192,72 @@ Describe the numerical abundance of microbial life in relation to the ecology an
     - Upper 200 m of marine habitat has higher genetic diversity than in domestic animals. 
     - Open ocean prokaryotes have much greater adaptive potential than those in soil, subsurface and domestic animals. 
     - Greater prokaryotic abundance in unconsolidated subsurface than in soil.
+
+
+### Evidence Worksheet_02 "Life and the Evolution of Earth's Atmosphere"
+#### Learning objectives: 
+Comment on the emergence of microbial life and the evolution of Earth systems
+
+![](1.jpg){height=1200px, width=450px}
+![](2.jpg){height=1200px, width=450px}
+![](3.jpg){height=1200px, width=450px}
+![](4.jpg){height=1600px, width=450px}
+    
+### Problem set_02 "Microbial Engines"
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles.
+
+#### Specific Questions:
+* What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?  
+
+    - geochemical cycles:  
+        - tectonics & atmospheric photochemical processes  
+            - supply substrates and remove products
+        - allow elements and molecules to interact and form/break bonds in a cyclical manner  
+        - Most H~2~ in mantle escape -> most geochemical reactions based on acid/base reactions (transfer of H^+^ without e^-^)  
+        - volcanism and rock weathering resupply C, S, P
+      
+    - biochemical cycles: redox reactions
+        - transfer e^-^ and H^+^ from limited set of eleements
+        - microbially catalyzed, thermodynamically constrained redox reactions (coupled half-cells)
+
+* Why is Earth's redox state considered an emergent property?
+
+    - abiotic (acid/base) and biotic (redox) reactions altered surface redox state of the planet. Microbes took advantage of Earth's acid/base redox energy.  
+      --> The evolution of the processes created the redox condition of oceans and atmosphere
+      
+      - E.g. thermodynamic equilibrium would lead to eventual depeletion of substrates essential for life -> biological oxidation of Earth driven by photosynthesis by microbes (= energy transduction process not directly dependent on preformed bond energy)
+  
+
+* How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?  
+    - forward and reverse reactions required to maintain cycle
+        - E.g. Methanogenic Archaea: CO~2~ + H~2~ -> CH~4~
+            - If H~2~ is low, then the reverse reaction becomes thermodynamically favourable and is done by another Archaea using the methanogic machinery in reverse.
+    - sunlight replenishes energy that is lost
+    - cooperation between deifferent species to overcome thermodynamic barriers
+
+* Using information provided in the text, describe how the nitrogen cycle partitions between different redox 'niches' and microbial groups. Is there a relationship between the nitrogen cycle and climate change?   
+
+    - nitrogen fixation = the only biological process that makes N~2~ accessible for sysnthesis of proteins/nucleic acids (N~2~ -> NH~4~^+^) -> biologically irreversible reaction catalyzed by nitrogenase (conserved enzyme), which is inhibited by O~2~  
+    - In presence of O~2~, NH~4~^+^ is oxidzied to NO~2~^-^ to NO~3~^-^, all using a specific group of Bacteria or Archaea at each step. This also reduces CO~2~ to organic C at the same time.  
+    - In the absence of O~2~, another set of microbes use NO~2~^-^ and NO~3~^-^ as electron acceptors in anaerobic oxidation of organic C and also forms N~2~ (repeating the N cycle)
+    - The N cycle is spatially separated, but forms interdependent e^-^ pool influenced by photosynthetic production of O^2^ and available organic matter
+    - N~2~O is a greenhouse gas and can contribute to global warming. Also, micrboes in the N cycle convert organic C to CO~2~, which may impact the C cycle and climate change.  
+    
+
+* What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?  
+
+    - essential pathways: are conserved
+    - but as microbial diversity increases, the number of new proteins discovered increases (new number of proteins increase linearly with number of new genomes sequenced)
+
+* On what basis do the authors consider microbes the guardians of metabolism?  
+    - vertical and horizontal gene transfer allows the transfer and spread of genes needed for metabolic pathways. As such, the extinction of individual taxonomic units would not result in the extinction of core machines of the pathway.
+    - machines, unlike microbes, can't cycle waste back as substrate  
+    
+
+### Module_1 essay
+
+**To be uploaded**
 
 
 ### Module 01 references
