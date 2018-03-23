@@ -1,0 +1,44 @@
+---
+title: "Project_1"
+author: "Albert Chang (26234147)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+---
+
+library("tidyverse")
+library("phyloseq")
+library("magrittr")
+load("mothur_phyloseq.RData")
+
+set.seed(4832)
+m.norm = rarefy_even_depth(mothur, sample.size=100000)
+
+m.perc = transform_sample_counts(m.norm, function(x) 100 * x/sum(x))
+
+m.alpha = estimate_richness(m.norm, measures = c("Chao1", "Shannon"))
+
+m.meta.alpha = full_join(rownames_to_column(m.alpha), rownames_to_column(data.frame(m.perc@sam_data)), by = "rowname")
+
+m.meta.alpha
+
+m.meta.alpha %>% 
+  
+ggplot() +
+  geom_point(aes(x=Depth_m, y=Shannon)) +
+   geom_smooth(method='auto', aes(x=as.numeric(Depth_m), y=Shannon)) +
+  labs(title="Example 1: Alpha-diversity across depth", y="Shannon's diversity index", x="Depth (m)")
+  
+m.meta.alpha %>% 
+
+ggplot() +
+  geom_point(aes(x=O2_uM, y=Shannon)) +
+  labs(title="Example 2: Alpha-diversity across oxygen", y="Shannon's diversity index", x="Oxygen (uM)")
+  
+  
+
+plot_bar(mothur, fill="Phylum")
+
+read.table(file="Saanich.metadata2.txt")
+metadata = read.table(file="Saanich.metadata2.txt", header=TRUE, row.names=1, sep="\t", na.strings=c("NAN","NA","."))

@@ -1,0 +1,682 @@
+---
+title: "MICB425 Portfolio - Microbial Ecological Genomics: From Genomes to Biomes, Spring 2018"
+author: "Albert Chang (26234147)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+---
+# Module 01
+Reserve the first level headings (#) for the start of a new Module. This will help to organize your portfolio in an intuitive fashion.  
+**Note: Please edit this template to your heart's content. This is meant to be the armature upon which you build your individual portfolio. You do not need to keep this instructive text in your final portfolio, although you do need to keep module and assignment names so we can identify what is what.**
+
+
+## Module 01 portfolio check
+The first of your second level headers (##) is to be used for the portfolio content checks. The Module 01 portfolio check has been built for you directly into this template, but will also be available as a stand-alone markdown document available on the MICB425 GitHub so that you know what is required in each module section in your portfolio. The completion status and comments will be filled in by the instructors during portfolio checks when your current portfolios are pulled from GitHub.
+
+* Installation check
+    + Completion status:
+    + Comments:
+* Portfolio repo setup
+    + Completion status: 
+    + Comments:
+* RMarkdown Pretty PDF Challenge
+    + Completion status:
+    + Comments:
+* Evidence worksheet_01
+    + Completion status:
+    + Comments:
+* Evidence worksheet_02
+    + Completion status:
+    + Comments:
+* Evidence worksheet_03
+    + Completion status:
+    + Comments:
+* Problem Set_01
+    + Completion status:
+    + Comments:
+* Problem Set_02
+    + Completion status:
+    + Comments:
+* Writing assessment_01
+    + Completion status:
+    + Comments:
+* Additional Readings
+    + Completion status:
+    + Comments  
+    
+## Data science Friday  
+The remaining second level headers (##) are for separating data science Friday, regular course, and project content. In this module, you will only need to include data science Friday and regular course content; projects will come later in the course.
+
+### Installation check
+Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
+
+Use this space to include your installation screenshots.  
+**Sent via e-mail**
+
+
+
+### Portfolio repo setup
+Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
+
+
+
+### RMarkdown pretty PDF challenge
+**Please see Assignment_3.Rmd in DS_Friday folder.**
+
+## Origins and Earth Systems
+### Evidence worksheet 01 
+The template for the first Evidence Worksheet has been included here. The first thing for any assignment should link(s) to any relevant literature (which should be included as full citations in a module references section below).
+
+You can copy-paste in the answers you recorded when working through the evidence worksheet into this portfolio template. 
+
+As you include Evidence worksheets and Problem sets in the future, ensure that you delineate Questions/Learning Objectives/etc. by using headers that are 4th level and greater. This will still create header markings when you render (knit) the document, but will exclude these levels from the Table of Contents. That's a good thing. You don't want to clutter the Table of Contents too much.
+
+[Whitman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+#### Learning objectives
+Describe the numerical abundance of microbial life in relation to ecology and biogeochemistry of Earth systems. 
+
+#### General questions
+* What were the main questions being asked?  
+      - what is the number of prokaryotes on Earth  
+      - What is the range of prokaryotes present in specific parts of the Earth  
+(none of these questions were directly stated in the paper)
+
+* What were the primary methodological approaches used?  
+      - No methods were described in the paper  
+      - Literature search/survey was done in order to obtain numbers for making estimates of the environments  
+      - Number calculated (of hypothetical sample) was extrapolated to estimate the number of prokaryotes present  
+
+
+* Summarize the main results or findings.  
+      - Cellular production rate is the highest in the open ocean  
+      - Prokaryotes contribute to approx. 60-100% of the total C found in plants (make up big portion of total C on Earth)  
+      - Subsurface = major habitat for prokaryotes (greatest in terms of number of prokaryotes present than that found in other parts of the biosphere)  
+      - Data not completely accurate since mostly estimated by extrapolation (may need to be revised)  
+      - Turnover time is fastest in domestic mammals (rapidly growing population, although it's the least in terms of population size)  
+      - Cellular productivity of subsurface prokaryotes comparable to that of domestic animals  
+
+
+* Do new questions arise from the results?  
+      - Yes. The paper estimated the number of prokaryotes. How does the number of bacteria compare to that of archaea?  
+      - How does climate change affect prokaryote abundance? (Paper was published in 1998; if done again today, what would the results be and how would they compare?)  
+
+* Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+      - Not much background information nor description of methods were discussed in the paper  
+      - Did literature survey so each method will possibly have diferences (variability of results), as well as different uncertainties (error rate). Data will vary across reported results.  
+      - Didn't really state purpose of the paper, particularly in the abstract; can make purpose more explicit so that it is easier to tie it to the bigger picture and help the reader understand the importance of the study  
+
+
+### Problem set 01
+#### Learning objectives: 
+Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
+
+#### Specific questions:
+* What are the primary prokaryotic habitats on Earth and how do they vary with respect to their capacity to support life? Provide a breakdown of total cell abundance for each primary habitat from the tables provided in the text.   
+
+
+      - Aquatic: 1.181 x 10^30^ cells  
+        - Freshwater - 1.31 x 10^26^ cells  
+        - Saline lakes - 1.0 x 10^26^ cells  
+        - Marine - 1.18 x 10^29^ cells
+      - Soil: 2.56 x 10^29^ cells  
+      - Subsurface: 3.8 x 10^30^ cells  
+        - 10 cm marine  
+        - 8 m terrestrial  
+
+
+* What is the estimated prokaryotic cell abundance in the upper 200 m of the ocean and what fraction of this biomass is represented by marine cyanobacterium including Prochlorococcus? What is the significance of this ratio with respect to carbon cycling in the ocean and the atmospheric composition of the Earth?  
+
+      - cell density: 5 x 10^5^ cells/mL  
+      - Prochlorococcus spp. -> cell density: 4 x 10^4^ cells/mL  
+      - fraction = (4 x 10^4^ cells/mL) / (5 x 10^5^ cells/mL) = 0.08 = 8 % marine cyanobacteria
+      - Significant portion of upper oceanic microbes are photosynthetic cyanobacteria needed to fix carbon -> provides C for everyone = high turnover rate  
+      
+
+* What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?  
+
+    - Autotroph: "Self-nourishing"  
+                  - Fix inorganic carbon (CO~2~)  
+    - Heterotroph: assimilate organic carbon  
+    - Lithotroph: use inorganic substrates (carbon) for energy source    
+
+* Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?  
+
+      - Deep habitats supporting life:  
+      - Subsurface: Terrestrial = 4 km from sediment (a bit below Mariana's Trench)  
+      - Temperature is limiting factor (approx. 125 degrees Celsius); change in temp. is approx. 22 degrees Celsius per km depth.  
+
+
+* Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?  
+
+      - 57-77 km above Earth's surface (a bit above Mt. Everest)  
+      - Limiting factor is radiation  
+
+* Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth's biosphere measured in km?  
+
+      - 61-81 km = range of Earth's biosphere
+
+* How was annual cellular production of prokaryotes described in Table 7 column four determined? (Provide an example of the calculation)  
+
+      - (Population) x (Turnover/yr) = Cells/yr  
+      - Marine Heterotrophs:  
+        - (3.6 x 10^28^ cells x 365 days) / 16 turnovers = 8.2 x 10^29^  
+
+
+* What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?  
+
+      - C content = amount of organic C stored
+      - C assimilation efficiency = inorganic C -> organic C
+      - Turnover rate = fraction of C that leaves a reservoir per specified time
+      - Carbon efficiency = 20%  
+        - 5-20 fg C per Cell = 20 x 10^-30^ Pg/cell  
+        - (3.6 x 10^28^ cells) x (20 x 10^-30^ Pg/cell) = 0.72 Pg C in marine
+        - Heterotrophs:  
+          - 4 x 0.72 = 2.88 Pg/yr  
+      - (C consumed) / (turnover rate)
+      - more sunlight near surface
+      - high nutrient = high energy = high turnover rate  
+
+* How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)
+     - [( (4 x 10^-7^ mutation rate per gene) /cell)^4^ x ( (3.6 x 10^28^ cells) /16 days) x (1 day/24 hrs)]^-1^ = 0.42 hrs for 4 mutations    
+     
+     
+* Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?
+     - Point mutations are not the only way. Horizontal and lateral gene transfer can also occur. Conjugation by plasmid, transduction by virus, and transformation by naked virus can all occur. High genetic diversity and adaptive potential may possibly lead to new species.    
+     
+     
+* What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text? 
+    - Upper 200 m of marine habitat has higher genetic diversity than in domestic animals. 
+    - Open ocean prokaryotes have much greater adaptive potential than those in soil, subsurface and domestic animals. 
+    - Greater prokaryotic abundance in unconsolidated subsurface than in soil.
+
+
+### Evidence Worksheet_02 "Life and the Evolution of Earth's Atmosphere"
+#### Learning objectives: 
+Comment on the emergence of microbial life and the evolution of Earth systems
+
+![](1.jpg){height=1200px, width=450px}
+![](2.jpg){height=1200px, width=450px}
+![](3.jpg){height=1200px, width=450px}
+![](4.jpg){height=1600px, width=450px}
+    
+### Problem set_02 "Microbial Engines"
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles.
+
+#### Specific Questions:
+* What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?  
+
+    - geochemical cycles:  
+        - tectonics & atmospheric photochemical processes  
+            - supply substrates and remove products
+        - allow elements and molecules to interact and form/break bonds in a cyclical manner  
+        - Most H~2~ in mantle escape -> most geochemical reactions based on acid/base reactions (transfer of H^+^ without e^-^)  
+        - volcanism and rock weathering resupply C, S, P
+      
+    - biochemical cycles: redox reactions
+        - transfer e^-^ and H^+^ from limited set of elements
+        - microbially catalyzed, thermodynamically constrained redox reactions (coupled half-cells)
+
+* Why is Earth's redox state considered an emergent property?
+
+    - abiotic (acid/base) and biotic (redox) reactions altered surface redox state of the planet. Microbes took advantage of Earth's acid/base redox energy.  
+      --> The evolution of the processes created the redox condition of oceans and atmosphere
+      
+      - E.g. thermodynamic equilibrium would lead to eventual depeletion of substrates essential for life -> biological oxidation of Earth driven by photosynthesis by microbes (= energy transduction process not directly dependent on preformed bond energy)
+  
+
+* How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?  
+    - forward and reverse reactions required to maintain cycle
+        - E.g. Methanogenic Archaea: CO~2~ + H~2~ -> CH~4~
+            - If H~2~ is low, then the reverse reaction becomes thermodynamically favourable and is done by another Archaea using the methanogic machinery in reverse.
+    - sunlight replenishes energy that is lost
+    - cooperation between deifferent species to overcome thermodynamic barriers
+
+* Using information provided in the text, describe how the nitrogen cycle partitions between different redox 'niches' and microbial groups. Is there a relationship between the nitrogen cycle and climate change?   
+
+    - nitrogen fixation = the only biological process that makes N~2~ accessible for sysnthesis of proteins/nucleic acids (N~2~ -> NH~4~^+^) -> biologically irreversible reaction catalyzed by nitrogenase (conserved enzyme), which is inhibited by O~2~  
+    - In presence of O~2~, NH~4~^+^ is oxidzied to NO~2~^-^ to NO~3~^-^, all using a specific group of Bacteria or Archaea at each step. This also reduces CO~2~ to organic C at the same time.  
+    - In the absence of O~2~, another set of microbes use NO~2~^-^ and NO~3~^-^ as electron acceptors in anaerobic oxidation of organic C and also forms N~2~ (repeating the N cycle)
+    - The N cycle is spatially separated, but forms interdependent e^-^ pool influenced by photosynthetic production of O^2^ and available organic matter
+    - N~2~O is a greenhouse gas and can contribute to global warming. Also, micrboes in the N cycle convert organic C to CO~2~, which may impact the C cycle and climate change.  
+    
+
+* What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?  
+
+    - essential pathways: are conserved
+    - but as microbial diversity increases, the number of new proteins discovered increases (new number of proteins increase linearly with number of new genomes sequenced)
+
+* On what basis do the authors consider microbes the guardians of metabolism?  
+    - vertical and horizontal gene transfer allows the transfer and spread of genes needed for metabolic pathways. As such, the extinction of individual taxonomic units would not result in the extinction of core machines of the pathway.
+    - machines, unlike microbes, can't cycle waste back as substrate  
+    
+
+### Module_1 essay
+
+Human beings are innovative creatures that have engineered many machines for technological advancement and manipulation of the environment, be it for better or for worse. That being said, are humans actually at the helm of Spaceship Earth, or are we only capable of living in the presence of a microbial world? We have utilized microbes to our advantage in innumerable processes, ranging from legume cropping in agriculture to fermentation in alcohol production, as well as denitrification in sewage treatment. As a matter of fact, humans have been relying on microbes prior to our acknowledgement of their existence. Microbes have been present on Mother Earth long before the existence of Homo sapiens and have established the distinctive, phenotypic features of Earth's atmosphere suitable for human life. In addition, microbes are an essential part of Earth's biogeochemical cycles, which are required to sustain the lives of the many other organisms which benefit the human species. Thus, humans live in a microbial world and would not be able to survive otherwise without the metabolic processes provided by microbes. Microbes, on the other hand, would easily thrive in a human-less world.  
+
+Microbes have existed long before the birth of the human race and can easily continue to thrive even in the absence of human intervention. To begin with, it is important to discuss the history of microbial life in order to understand and appreciate the influence these microorganisms have on Earth and her environment. According to geological evidence, microbial activity has present on Earth for at least 3.5 billion years (Gyr) (5). Evidence derived from stable-isotope fractionation of 3.5-Gyr stromatolites suggested possible sulfate reduction methanogenesis activity (2). In addition, molecular fossils from late-Archaean rocks (i.e. 3.0 - 2.5 Gyr ago) provided evidence of preserved biomarkers, such as 2??-methylhopanes from cyanobacteria, allowing for further inference of the types of microbes and metabolic processes present during that period (5). Furthermore, microbes can influence their surrounding environment through the production of metabolic products and byproducts required for survival. An example would be the nitrogen cycle, where multiple species of microbes interact together, forming a nutrient cycle. These interdependent relationships where a species of microbes utilize the waste of another species as substrate to generate energy for growth and reproduction have existed long before human intervention, and would continue to exist due the self-sustainability of the symbiosis that exists between these microbial colonies (2). Despite many volcanic eruptions, meteorite impacts and extinction events during Earth's early years, many diverse microbes persisted and continue to flourish today. In addition to being diverse and possessing remarkable adaptability, microbes have the ability to perform horizontal gene transfer (HGT) of genes to other organisms in order to preserve essential metabolic pathways (2). If the extinction, per se, of the original taxonomic unit were to occur, the dispersion of essential core genes by HGT ensures the conservation of core metabolic pathways due to the selective pressure of the environment. In other words, non-essential and irrelevant genes are lost, while those that are important are preserved. Microbes have a long history on Earth and have played an important role in shaping the planet in which we currently inhabit.  
+
+The human race as a whole is dependent on microbial activity for survival on Earth. Firstly, microbes have established the current phenotypic atmosphere of Earth, allowing human existence. The atmosphere of the early Earth was anoxic and had a completely different composition than the atmosphere we have today (4). Abiotic and biotic factors such as volcanic eruptions and methane-producing microbes contributed to and atmosphere rich in carbon dioxide and methane (2). However, 2.3 Gyr ago, there was an initial rise in oxygen largely due to oxygenic photosynthesis performed by cyanobacteria (4). Although the rise in oxygen concentration led to a mass extinction known as the Great Oxygenation Event, the oxic atmosphere allowed the evolution of many aerobic organisms and brought about the species which would eventually be known as Homo sapiens (3). In addition to establishing an atmosphere suitable for humans, microbes were capable of taking advantage of the abiotic geochemical reactions produced by Earth and have co-evolved to form biogeochemical cycles (2). These biogeochemical cycles are essential for the production of major elements required for building biological macromolecules such as proteins, lipids and nucleic acids and thus, are crucial for sustaining human life (2).  
+
+Biogeochemical cycles are largely dependent on reduction-oxidation (redox) reactions mediated by microbes. These important cycles create fluxes of major essential elements such as hydrogen (H), carbon (C), nitrogen (N), oxygen (O) and sulfur (S) that are required for the synthesis of all biological macromolecules and ultimately, human survival (2). An example of a major biogeochemical cycle is the nitrogen cycle. The N cycle is formed by microbes and is essential for providing living organisms access to nitrogen, needed for the synthesis nucleic acid and proteins (1). Although approximately 78% of Earth's atmosphere is composed of molecular nitrogen (N2), atmospheric nitrogen is inert and not readily available for human use (5). Nitrogen fixation is the only biological process currently available which allows the conversion of N2 to ammonium (NH4+), providing accessible nitrogen to humans, animals and non-nitrogen fixing plants altogether (2). Certain microbes, such as cyanobacteria, express nitrogenases and can catalyze the irreversible reaction to fix nitrogen (5). Following nitrogen fixation, nitrification and denitrification by certain microbes occur to convert the available nitrogen back into N2 to maintain the metabolic cycle and a balance between atmospheric nitrogen and available nitrogen (2). With the rapid growth of the human population, food becomes scarce and methods for increasing provisions are needed. Taking advantage of the endosymbiotic nitrogen-fixing microbes found in legumes, humans have developed sustainable approaches for agriculture, such as legume cropping in lieu of synthetic fertilizers, in order to provide accessible nitrogen to crops (1). Thus, microbes have played and continue to play an integral role in the storybook of human survival.  
+
+In conclusion, microbes have played a vital part in providing the appropriate environment required for human existence and continue to play an integral part for human life on Earth. Not only have microbes lived long before the appearance of Homo sapiens, microbes have evolved and adapted to the harsh geological environment-be it by natural causes or by human influence-and have changed the phenotype of Earth's atmosphere to establish a habitable place for humans today. Lastly, microbial metabolic pathways are necessary to maintain biogeochemical cycles. This allows microbes to catalyze thermodynamically constrained redox reactions of the cycles, allowing their own survival and that of other living organisms.  
+
+
+### Module 01 references
+Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
+
+An example for Whitman and Wiebe (1998) has been included below.
+
+Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
+
+References for Essay:  
+1. Canfield, DE, Glazer, AN, Falkowski, PG. 2010. The Evolution and Future of Earth's Nitrogen Cycle. Science. 330:192-196. doi: 10.1126/science.1186120.  
+2. Falkowski, PG, Fenchel, T, Delong, EF. 2008. The Microbial Engines That Drive Earth's Biogeochemical Cycles. Science. 320:1034-1039. doi: 10.1126/science.1153213.  
+3. Fischer, WW, Hemp, J, Valentine, JS. 2016. How did life survive Earth's great oxygenation? Curr. Opin. Chem. Biol. 31:166-178. doi: 10.1016/j.cbpa.2016.03.013.  
+4. Kasting, J, Siefert, J. 2003. Life and the evolution of Earth's atmosphere (vol 296, pg 1066, 2002). Science. 299:1015-1015.  
+5. Sleep, NH, Nisbet, EG. 2001. The habitat and nature of early life. Nature. 409:1083-1091. doi: 10.1038/35059210.  
+
+
+# Module 02
+Reserve the first level headings (#) for the start of a new Module. This will help to organize your portfolio in an intuitive fashion.  
+
+## Remapping the Body of the World
+
+### Problem set_03 "Metagenomics: Genomic Analysis of Microbial Communities"
+#### Learning objectives: 
+Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.  
+*(Reminders for how to format links, etc in RMarkdown are in the RMarkdown Cheat Sheets)*
+
+#### Specific Questions:
+* How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?  
+    - Solden et al. (2016). "The Bright Side of Microbial Dark Matter: Lessons Learned from the Uncultivated Majority". -> 89 Bacterial and 20 Archaeal phyla recogized by small rRNA subunits
+        - only 0.1 - 1% of microbes in environment have been cultured
+    - Youssef et al. (2015). "Assessing the Global Phylum Level Diversity Within the Bacterial Domain: A Review"
+        - 70 bacterial phyla with no cultured representatives (this number may be greater)
+        - previously confined to pure cultures, found 12 bacterial phyla with cultured representatives: Actinobacteria, Bacteroidetes, Chlamydiae, Chlorobi, Chloroflexi, Cyanobacteria, Thermi (Deinococcus-Thermus), Firmicutes, Planctomycetes, Proteobacteria, Spirochaetes, Thermotogae
+  
+
+* How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?  
+    - From EBI Metagenomics (Europe)
+        - 1486 public projects
+        - 86201 samples
+        - soil, marine, grassland, fecal, rumens, agriculture, etc.
+    - JGI (U.S.)
+        - 36715 public projects
+
+* What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)?  
+    - MEGAN (metagenome analyzer)
+        - http://ab.inf.uni-tuebingen.de/software/megan5/download/welcome.html
+        - analyze metagenomes and group using taxonomic analysis
+    - IMG/M (Integrated Microbial Genomes)
+        - http://img.jgi.doe.gov/cgi-bin/m/main.cgi
+        - tool for analyzing publicly available genome/metagenome datasets
+    - MG-RAST (metagenomics analysis server)
+        - https://www.mg-rast.org/
+    - Tag-based sequencing: SSU rRNA -> MOTHUR, QIIME
+    - BLAST (NCBI)
+
+* What is the difference between phylogenetic and functional gene anchors and how can they be used in metagenome analysis?  
+    - Phylogenetic anchors:
+        - link other unknown genes within genome to a taxon
+        - collection of genes can be placed into bins of discrete taxonomic groups
+        - onl one copy per cell; ensures no HGT, and genes only appear once in tree
+        - Looks at size of bins for relative abundance of taxa
+    - Functional anchors:
+        - tells what the cell does
+        - search for gene that codes for protin involved in the terminal steps of a pathway
+        - can count abundance of phylogenetic anchor
+
+* What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?  
+    - binning: grouping reads or contigs and assigning them to operational taxonomic units (OTU)
+        - Taxonomy dependent - classifies DNA fragments by comparing to reference database
+        - Taxonomy independent - reference free binning by clustering similar features (e.g. GC content, etc.)
+    - sequence composition based binning -> genomic signatures
+        - Interpolated Markov Model (IMM)
+    - abundance based binning
+        - Expectation-Maximization (EM) algorithm
+    -Hybrid binning
+        - Lander-Waterman model
+    Sedlar et al. (2016) "Bioinformatics strategies for taxonomy independent binning and visualization of sequence in shotgun metagenomics"
+
+* Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?  
+    - Douterelo et al. (2014). "Methodological approaches for studying the microbial ecology of drinking water distribution systems."
+    - Clone dependent shotgun library
+        - Find functions of proteins from the gene of uncultivable microbes by cloning gene fragments into an expression host
+        - Limitation: gene may not be compatible with the host
+    - Pacific Bioscience
+    - Nanopore
+    - Metatranscriptomes
+        - RT-qPCR:
+            -high sensitivity, can run multiple samples + analyze different genes at once
+            - quantitative representation of changes in gene expression due to different treaments/controls
+            - Limitations:
+                - RNA is highly unstable
+                - DNA extracted needs to be pure
+        - Functional Microarrays:
+            - Overall assessment of gene expression within a microbial community
+            - simultaneous evaluation of many mRNA (rapid)
+            - Limitations:
+                - liquid chromatography/2D gels for protein separation can be tedious
+                - Must use LC-MS (Liquid chromatography-mass spectrometry) to characterize samples
+
+### Evidence worksheet_04 "Bacterial Rhodopsin Gene Expression"
+#### Learning objectives: 
+
+* Discuss the relationship between microbial community structure and metabolic diversity
+
+* Evaluate common methods for studying the diversity of microbial communities
+
+*	Recognize basic design elements in metagenomic workflows
+
+#### General Questions:
+
+* What were the main questions being asked?  
+    - To describe and understand more about proteorhodopsins (PRs), photosystem genetics and biochemistry (foud that proteorhodopsin isn't needed, but provides extra energy in form of ATP)  
+    - What is the physiological basis of light-activated growth stimulation and the function of the various PR photosystems?
+    - Can we recover a functional PR-system in a metagenomic screening context?
+    - Can a single genetic event (HGT/LGT operon) confer PR-system functionality?
+    
+* What were the primary methodological approaches used?  
+    - Created fosmid library (gene library) -> clone in E. coli -> Screen by colour change -> extract carotenoid gene
+    - Sequenced to compreltion using Tn5-Seq
+        - Use copy control and induced with arabinose
+            - slight colour shift may have been hard to discern (so 3/12000 hits)
+    - Proton-Pumping experiment and ATP measurements
+    - HPLC Analysis of metabolites
+
+* Summarize the main results or findings.  
+    - Only 6 genes are required to enable light-activated proton translocation and photophosphorylation
+        - these 6 genes found in marine bacterial taxa
+            - these are necessary and sufficient for complete synthesis and assembly of a fully functional PR photoprotein in E. coli
+    - demonstrated that illumination of cells expressing a native marine bacterial PR photosystem generates a PMF that drives celluar ATP synthesis
+    - a single genetic event can result in the acquisition of phototrophic capabilities in chemoorganotrophic microorganisms
+
+* Do new questions arise from the results?  
+    - Paper mentioned that light stimulation/yield in Pelagibacter ubique in previous study had a negative result that may be due to the influence of various factors in seawater. Are there perhaps other reasons it didn't work on P. ubique?
+    - Why were only 3/12280 clone identified?
+
+* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+    - Sufficient background information was provided
+    - The figures and figure font were a bit too small to read without having to zoom in 300%
+    
+    
+### Module 02 references
+Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
+
+An example for Whitman and Wiebe (1998) has been included below.
+
+Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
+
+---
+
+# Module 03
+
+
+## Microbial Species Concepts
+
+---
+### Problem set_03 "Metagenomics: Genomic Analysis of Microbial Communities"
+#### Learning objectives: 
+Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.  
+*(Reminders for how to format links, etc in RMarkdown are in the RMarkdown Cheat Sheets)*
+
+#### Specific Questions:
+* How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?  
+    - Solden et al. (2016). "The Bright Side of Microbial Dark Matter: Lessons Learned from the Uncultivated Majority". -> 89 Bacterial and 20 Archaeal phyla recogized by small rRNA subunits
+        - only 0.1 - 1% of microbes in environment have been cultured
+    - Youssef et al. (2015). "Assessing the Global Phylum Level Diversity Within the Bacterial Domain: A Review"
+        - 70 bacterial phyla with no cultured representatives (this number may be greater)
+        - previously confined to pure cultures, found 12 bacterial phyla with cultured representatives: Actinobacteria, Bacteroidetes, Chlamydiae, Chlorobi, Chloroflexi, Cyanobacteria, Thermi (Deinococcus-Thermus), Firmicutes, Planctomycetes, Proteobacteria, Spirochaetes, Thermotogae
+  
+
+* How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?  
+    - From EBI Metagenomics (Europe)
+        - 1486 public projects
+        - 86201 samples
+        - soil, marine, grassland, fecal, rumens, agriculture, etc.
+    - JGI (U.S.)
+        - 36715 public projects
+
+* What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)?  
+    - MEGAN (metagenome analyzer)
+        - http://ab.inf.uni-tuebingen.de/software/megan5/download/welcome.html
+        - analyze metagenomes and group using taxonomic analysis
+    - IMG/M (Integrated Microbial Genomes)
+        - http://img.jgi.doe.gov/cgi-bin/m/main.cgi
+        - tool for analyzing publicly available genome/metagenome datasets
+    - MG-RAST (metagenomics analysis server)
+        - https://www.mg-rast.org/
+    - Tag-based sequencing: SSU rRNA -> MOTHUR, QIIME
+    - BLAST (NCBI)
+
+* What is the difference between phylogenetic and functional gene anchors and how can they be used in metagenome analysis?  
+    - Phylogenetic anchors:
+        - link other unknown genes within genome to a taxon
+        - collection of genes can be placed into bins of discrete taxonomic groups
+        - onl one copy per cell; ensures no HGT, and genes only appear once in tree
+        - Looks at size of bins for relative abundance of taxa
+    - Functional anchors:
+        - tells what the cell does
+        - search for gene that codes for protin involved in the terminal steps of a pathway
+        - can count abundance of phylogenetic anchor
+
+* What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?  
+    - binning: grouping reads or contigs and assigning them to operational taxonomic units (OTU)
+        - Taxonomy dependent - classifies DNA fragments by comparing to reference database
+        - Taxonomy independent - reference free binning by clustering similar features (e.g. GC content, etc.)
+    - sequence composition based binning -> genomic signatures
+        - Interpolated Markov Model (IMM)
+    - abundance based binning
+        - Expectation-Maximization (EM) algorithm
+    -Hybrid binning
+        - Lander-Waterman model
+    Sedlar et al. (2016) "Bioinformatics strategies for taxonomy independent binning and visualization of sequence in shotgun metagenomics"
+
+* Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?  
+    - Douterelo et al. (2014). "Methodological approaches for studying the microbial ecology of drinking water distribution systems."
+    - Clone dependent shotgun library
+        - Find functions of proteins from the gene of uncultivable microbes by cloning gene fragments into an expression host
+        - Limitation: gene may not be compatible with the host
+    - Pacific Bioscience
+    - Nanopore
+    - Metatranscriptomes
+        - RT-qPCR:
+            -high sensitivity, can run multiple samples + analyze different genes at once
+            - quantitative representation of changes in gene expression due to different treaments/controls
+            - Limitations:
+                - RNA is highly unstable
+                - DNA extracted needs to be pure
+        - Functional Microarrays:
+            - Overall assessment of gene expression within a microbial community
+            - simultaneous evaluation of many mRNA (rapid)
+            - Limitations:
+                - liquid chromatography/2D gels for protein separation can be tedious
+                - Must use LC-MS (Liquid chromatography-mass spectrometry) to characterize samples
+
+
+### Problem set_04 "Fine-scale phylogenetic architecture""
+#### Learning objectives: 
+
+* Gain experience estimating diversity within a hypothetical microbial community
+
+
+#### Outline:
+
+In class Day 1:
+
+1. Define and describe species within your group's "microbial" community.
+2. Count and record individuals within your defined species groups.
+3. Remix all species together to reform the original community.
+4. Each person in your group takes a random sample of the community (*i.e.* devide up the candy).
+
+Assignment:
+
+5. Individually, complete a collection curve for your sample.
+6. Calculate alpha-diversity based on your original total community and your individual sample.
+
+In class Day 2:
+
+7. Compare diversity between groups.
+
+#### Part 1: Description and enumeration
+Obtain a collection of "microbial" cells from "seawater". The cells were concentrated from different depth intervals by a marine microbiologist travelling along the Line-P transect in the northeast subarctic Pacific Ocean off the coast of Vancouver Island British Columbia. 
+
+Sort out and identify different microbial "species" based on shared properties or traits. Record your data in this Rmarkdown using the example data as a guide.
+
+Once you have defined your binning criteria, separate the cells using the sampling bags provided. These operational taxonomic units (OTUs) will be considered separate "species". This problem set is based on content available at [What is Biodiversity](http://cnx.org/content/m12179/latest/).
+
+For example, load in the packages you will use.
+```{r message=FALSE}
+#To make tables
+library(kableExtra)
+library(knitr)
+#To manipulate and plot data
+library(tidyverse)
+```
+
+Then load in the data. You should use a similar format to record your community data.
+```{r}
+example_data1 = data.frame(
+  number = c(1,2,3),
+  name = c("lion", "tiger", "bear"),
+  characteristics = c("brown cat", "striped cat", "not a cat"),
+  occurences = c(2, 4, 1)
+)
+```
+
+Finally, use these data to create a table.
+```{r}
+example_data1 %>% 
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)
+```
+	
+For your community:
+
+* Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.
+* Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed? 
+ 
+#### Part 2: Collector's curve
+To help answer the questions raised in Part 1, you will conduct a simple but informative analysis that is a standard practice in biodiversity surveys. This analysis involves constructing a collector's curve that plots the cumulative number of species observed along the y-axis and the cumulative number of individuals classified along the x-axis. This curve is an increasing function with a slope that will decrease as more individuals are classified and as fewer species remain to be identified. If sampling stops while the curve is still rapidly increasing then this indicates that sampling is incomplete and many species remain undetected. Alternatively, if the slope of the curve reaches zero (flattens out), sampling is likely more than adequate.
+
+To construct the curve for your samples, choose a cell within the collection at random. This will be your first data point, such that X = 1 and Y = 1. Next, move consistently in any direction to a new cell and record whether it is different from the first. In this step X = 2, but Y may remain 1 or change to 2 if the individual represents a new species. Repeat this process until you have proceeded through all cells in your collection.
+
+For example, we load in these data.
+```{r}
+example_data2 = data.frame(
+  x = c(1,2,3,4,5,6,7,8,9,10),
+  y = c(1,2,3,4,4,5,5,5,6,6)
+)
+```
+
+And then create a plot. We will use a scatterplot (geom_point) to plot the raw data and then add a smoother to see the overall trend of the data.
+```{r}
+ggplot(example_data2, aes(x=x, y=y)) +
+  geom_point() +
+  geom_smooth() +
+  labs(x="Cumulative number of individuals classified", y="Cumulative number of species observed")
+```
+
+For your sample:
+
+* Create a collector's curve for your sample (not the entire original community).
+* Does the curve flatten out? If so, after how many individual cells have been collected?
+* What can you conclude from the shape of your collector's curve as to your depth of sampling?
+
+#### Part 3: Diversity estimates (alpha diversity)
+Using the table from Part 1, calculate species diversity using the following indices or metrics.
+
+##### Diversity: Simpson Reciprocal Index
+
+$\frac{1}{D}$ where $D = \sum p_i^2$
+
+$p_i$ = the fractional abundance of the $i^{th}$ species
+
+For example, using the example data 1 with 3 species with 2, 4, and 1 individuals each, D =
+
+```{r}
+species1 = 2/(2+4+1)
+species2 = 4/(2+4+1)
+species3 = 1/(2+4+1)
+
+1 / (species1^2 + species2^2 + species3^2)
+```
+
+The higher the value is, the greater the diversity. The maximum value is the number of species in the sample, which occurs when all species contain an equal number of individuals. Because the index reflects the number of species present (richness) and the relative proportions of each species with a community (evenness), this metric is a diveristy metric. Consider that a community can have the same number of species (equal richness) but manifest a skewed distribution in the proportion of each species (unequal evenness), which would result in different diveristy values.
+
+* What is the Simpson Reciprocal Index for your sample?
+* What is the Simpson Reciprocal Index for your original total community?
+
+##### Richness: Chao1 richness estimator
+Another way to calculate diversity is to estimate the number of species that are present in a sample based on the empirical data to give an upper boundary of the richness of a sample. Here, we use the Chao1 richness estimator. 
+
+$S_{chao1} = S_{obs} + \frac{a^2}{2b})$
+
+$S_{obs}$ = total number of species observed
+a = species observed once
+b = species observed twice or more
+
+So for our previous example community of 3 species with 2, 4, and 1 individuals each, $S_{chao1}$ =
+
+```{r}
+3 + 1^2/(2*2)
+```
+
+* What is the chao1 estimate for your sample?
+* What is the chao1 estimate for your original total community?
+
+#### Part 4: Alpha-diversity functions in R
+We've been doing the above calculations by hand, which is a very good exercise to aid in understanding the math behind these estimates. Not surprisingly, these same calculations can be done with R functions. Since we just have a species table, we will use the `vegan` package. You will need to install this package if you have not done so previously. 
+
+```{r message=FALSE}
+library(vegan)
+```
+
+First, we must remove the unnecesary data columns and transpose the data so that `vegan` reads it as a species table with species as columns and rows as samples (of which you only have 1).
+```{r}
+example_data1_diversity = 
+  example_data1 %>% 
+  select(name, occurences) %>% 
+  spread(name, occurences)
+
+example_data1_diversity
+```
+
+Then we can calculate the Simpson Reciprocal Index using the `diversity` function.
+```{r}
+diversity(example_data1_diversity, index="invsimpson")
+```
+
+And we can calculate the Chao1 richness estimator (and others by default) with the the `specpool` function for extrapolated species richness. This function rounds to the nearest whole number so the value will be slightly different that what you've calculated above.
+```{r}
+specpool(example_data1_diversity)
+```
+
+In Project 1, you will also see functions for calculating alpha-diversity in the `phyloseq` package since we will be working with data in that form.
+
+For your sample:
+
+* What are the Simpson Reciprocal Indices for your sample and community using the R function?
+* What are the chao1 estimates for your sample and community using the R function?
+    + Verify that these values match your previous calculations.
+
+#### Part 5: Concluding activity
+If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
+
+* How does the measure of diversity depend on the definition of species in your samples?
+* Can you think of alternative ways to cluster or bin your data that might change the observed number of species?
+* How might different sequencing technologies influence observed diversity in a sample?
+
+### Module 03 references
+Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
+
+An example for Whitman and Wiebe (1998) has been included below.
+
+Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+

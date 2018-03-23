@@ -46,9 +46,9 @@ ggplot(Temp_f, aes(x=Temperature_F, y=Depth_m)) +
 
 load("phyloseq_object.RData")
 physeq_percent = transform_sample_counts(physeq, function(x) 100 * x/sum(x))
-plot_bar(physeq_percent, fill="Phylum") +
-  geom_bar(aes(fill=Phylum), stat="identity") +
-  ggtitle("Phyla from 10 to 200 m in Saanich Inlet") +
+plot_bar(physeq_percent, fill="Class") +
+  geom_bar(aes(fill=Class), stat="identity") +
+  ggtitle("Class from 10 to 200 m \n in Saanich Inlet") +
   xlab("Sample abundance") +
   ylab("Percent relative abundance")
 ```

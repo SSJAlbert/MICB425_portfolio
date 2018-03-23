@@ -1,0 +1,36 @@
+---
+title: "Problem_set_04 Fine-scale phylogenetic architecture"
+author: "Albert Chang (26234147)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+---
+
+#To make tables
+library(kableExtra)
+library(knitr)
+#To manipulate and plot data
+library(tidyverse)
+
+#Then load in the data. You should use a similar format to record your community data.
+
+
+Bag_1 = data.frame(
+  name = c("gummy bears", "sour gummy bears", "gummy rods", "large gummy", "gummy sour swirls", "gummy spiders", "gummy cokes", "twizzlers", "small bricks", "large bricks", "skittles", "M&M", "gummy curly lines", "kisses", "gummy balls", "gummy fruit", "mutated"),
+  characteristics = c("red","light red", "striped cat", "not a cat"),
+  occurrences = c(2, 4, 1)
+)
+
+example_data1 = data.frame(
+  number = c(1,2,3),
+  name = c("lion", "tiger", "bear"),
+  characteristics = c("brown cat", "striped cat", "not a cat"),
+  occurences = c(2, 4, 1)
+)
+
+#Finally, use these data to create a table.
+
+Bag_1 %>% 
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)

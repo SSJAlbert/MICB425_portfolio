@@ -6,12 +6,12 @@ output:
   html_document:
     toc: true
 ---
-# Module 02
+# Module 03
 Reserve the first level headings (#) for the start of a new Module. This will help to organize your portfolio in an intuitive fashion.  
 **Note: Please edit this template to your heart's content. This is meant to be the armature upon which you build your individual portfolio. You do not need to keep this instructive text in your final portfolio, although you do need to keep module and assignment names so we can identify what is what.**
 
 
-## Module 02 portfolio check
+## Module 03 portfolio check
 The first of your second level headers (##) is to be used for the portfolio content checks. The Module 01 portfolio check has been built for you directly into this template, but will also be available as a stand-alone markdown document available on the MICB425 GitHub so that you know what is required in each module section in your portfolio. The completion status and comments will be filled in by the instructors during portfolio checks when your current portfolios are pulled from GitHub.
 
 * Evidence worksheet_01
@@ -42,7 +42,7 @@ The first of your second level headers (##) is to be used for the portfolio cont
 Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
 
 
-## Remapping the Body of the World
+## Module 3 title
 
 ---
 ### Problem set_03 "Metagenomics: Genomic Analysis of Microbial Communities"
@@ -122,50 +122,6 @@ Specific emphasis should be placed on the process used to find the answer. Be as
             - Limitations:
                 - liquid chromatography/2D gels for protein separation can be tedious
                 - Must use LC-MS (Liquid chromatography-mass spectrometry) to characterize samples
-
-### Evidence worksheet_04 "Bacterial Rhodopsin Gene Expression"
-#### Learning objectives: 
-
-* Discuss the relationship between microbial community structure and metabolic diversity
-
-* Evaluate common methods for studying the diversity of microbial communities
-
-*	Recognize basic design elements in metagenomic workflows
-
-#### General Questions:
-
-* What were the main questions being asked?  
-    - To describe and understand more about proteorhodopsins (PRs), photosystem genetics and biochemistry (foud that proteorhodopsin isn't needed, but provides extra energy in form of ATP)  
-    - What is the physiological basis of light-activated growth stimulation and the function of the various PR photosystems?
-    - Can we recover a functional PR-system in a metagenomic screening context?
-    - Can a single genetic event (HGT/LGT operon) confer PR-system functionality?
-    
-* What were the primary methodological approaches used?  
-    - Created fosmid library (gene library) -> clone in E. coli -> Screen by colour change -> extract carotenoid gene
-    - Sequenced to compreltion using Tn5-Seq
-        - Use copy control and induced with arabinose
-            - slight colour shift may have been hard to discern (so 3/12000 hits)
-    - Proton-Pumping experiment and ATP measurements
-    - HPLC Analysis of metabolites
-
-* Summarize the main results or findings.  
-    - Only 6 genes are required to enable light-activated proton translocation and photophosphorylation
-        - these 6 genes found in marine bacterial taxa
-            - these are necessary and sufficient for complete synthesis and assembly of a fully functional PR photoprotein in E. coli
-    - demonstrated that illumination of cells expressing a native marine bacterial PR photosystem generates a PMF that drives celluar ATP synthesis
-    - a single genetic event can result in the acquisition of phototrophic capabilities in chemoorganotrophic microorganisms
-
-* Do new questions arise from the results?  
-    - Paper mentioned that light stimulation/yield in Pelagibacter ubique in previous study had a negative result that may be due to the influence of various factors in seawater. Are there perhaps other reasons it didn't work on P. ubique?
-    - Why wre only 3/12280 clone identified?
-
-* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
-    - Sufficient background information was provided
-    - The figures and figure font were a bit too small to read without having to zoom in 300%
-
-
-
-
 
 
 
