@@ -504,25 +504,6 @@ Specific emphasis should be placed on the process used to find the answer. Be as
 
 * Gain experience estimating diversity within a hypothetical microbial community
 
-
-#### Outline:
-
-In class Day 1:
-
-1. Define and describe species within your group's "microbial" community.
-2. Count and record individuals within your defined species groups.
-3. Remix all species together to reform the original community.
-4. Each person in your group takes a random sample of the community (*i.e.* devide up the candy).
-
-Assignment:
-
-5. Individually, complete a collection curve for your sample.
-6. Calculate alpha-diversity based on your original total community and your individual sample.
-
-In class Day 2:
-
-7. Compare diversity between groups.
-
 #### Part 1: Description and enumeration
 Obtain a collection of "microbial" cells from "seawater". The cells were concentrated from different depth intervals by a marine microbiologist travelling along the Line-P transect in the northeast subarctic Pacific Ocean off the coast of Vancouver Island British Columbia. 
 
@@ -560,6 +541,13 @@ For your community:
 
 * Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.
 * Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed? 
+
+```{r}
+candy_counts = read.table(file="Candy_community.csv", header=TRUE, sep=",", na.strings=c("NAN", "NA", "."))
+candy_table = candy_counts %>% kable("html")
+
+#The collection of microbial cells from seawater does not represent the actual diversity of microorganisms inhabtigin waters along the Line-P transect. Many were missed, especially if the abundance was low for those species in the first place.
+```
  
 #### Part 2: Collector's curve
 To help answer the questions raised in Part 1, you will conduct a simple but informative analysis that is a standard practice in biodiversity surveys. This analysis involves constructing a collector's curve that plots the cumulative number of species observed along the y-axis and the cumulative number of individuals classified along the x-axis. This curve is an increasing function with a slope that will decrease as more individuals are classified and as fewer species remain to be identified. If sampling stops while the curve is still rapidly increasing then this indicates that sampling is incomplete and many species remain undetected. Alternatively, if the slope of the curve reaches zero (flattens out), sampling is likely more than adequate.
@@ -587,7 +575,20 @@ For your sample:
 * Create a collector's curve for your sample (not the entire original community).
 * Does the curve flatten out? If so, after how many individual cells have been collected?
 * What can you conclude from the shape of your collector's curve as to your depth of sampling?
+```{r}
+candy_count_collector = data.frame(
+  x = c(1,13,14,15,27,37,49,50,52,55,58,67,76,93,104,113,122,127,128,129,137,138,139,141,150,154,160,164,165,167,171,177,182,184),
+  y = c(1,2,3,4,4,5,6,6,6,7,7,7,8,8,8,8,8,8,8,9,9,9,10,10,10,10,10,10,11,11,11,11,11,11)
+)
 
+ggplot(candy_count_collector, aes(x=x, y=y)) +
+  geom_point() +
+  geom_smooth() +
+  labs(x="Cumulative number of individuals classified", y="Cumulative number of species observed")
+
+# The curve flattens out at around 10 species, when the number of cells collected is 85.
+# In the beginning and towards the end, sampling individuals increase the species moreso than in the middle. This is probably because at the start there is more chance to get cells that aren't of the same species. Likewise, near the end when there are only a few cells remaining, those cells from species that have few individuals will eventually be sampled. In the middle, there is a greater likelihood of sampling cells from the same species, which explains the plateaur near the centre of the curve.
+```
 #### Part 3: Diversity estimates (alpha diversity)
 Using the table from Part 1, calculate species diversity using the following indices or metrics.
 
@@ -607,10 +608,61 @@ species3 = 1/(2+4+1)
 1 / (species1^2 + species2^2 + species3^2)
 ```
 
+```{r}
+#Sample
+
+Gummy_bear = 23/184
+Gummy_sour_bears = 1/184
+Gummy_Rods = 48/184
+Large_gummy = 0/184
+Gummy_sour_swirls = 1/184
+Gummy_spiders = 0/184
+Gummy_cokes= 0/184
+Gummy_string = 0/184
+Small_brick = 4/184
+Large_brick = 0/184
+Skittles = 49/184
+MM = 49/184
+Twizzlers = 0/184
+Kisses = 1/184
+Gummy_balls = 6/184
+Gummy_fruit = 1/184
+Mutated = 1/184
+
+Simpsons = 1/ (Gummy_bear^2 + Gummy_sour_bears^2 + Gummy_Rods^2 + Large_gummy^2 + Gummy_sour_swirls^2 + Gummy_spiders^2 + Gummy_cokes^2 + Gummy_string^2 + Small_brick^2 + Large_brick^2 + Skittles^2 + MM^2 + Twizzlers^2 + Kisses^2 + Gummy_balls^2 + Gummy_fruit^2 + Mutated^2)
+```
+
+```{r}
+#Community
+
+C_Gummy_bear = 105/793
+C_Gummy_sour_bears = 3/793
+C_Gummy_Rods = 174/793
+C_Large_gummy = 2/793
+C_Gummy_sour_swirls = 3/793
+C_Gummy_spiders = 6/793
+C_Gummy_cokes= 3/793
+C_Gummy_string = 7/793
+C_Small_brick = 15/793
+C_Large_brick = 3/793
+C_Skittles = 192/793
+C_MM = 222/793
+C_Twizzlers = 14/793
+C_Kisses = 16/793
+C_Gummy_balls = 24/793
+C_Gummy_fruit = 2/793
+C_Mutated = 2/793
+
+C_Simpsons = 1/ (C_Gummy_bear^2 + C_Gummy_sour_bears^2 + C_Gummy_Rods^2 + C_Large_gummy^2 + C_Gummy_sour_swirls^2 + C_Gummy_spiders^2 + C_Gummy_cokes^2 + C_Gummy_string^2 + C_Small_brick^2 + C_Large_brick^2 + C_Skittles^2 + C_MM^2 + C_Twizzlers^2 + C_Kisses^2 + C_Gummy_balls^2 + C_Gummy_fruit^2 + C_Mutated^2)
+```
+
 The higher the value is, the greater the diversity. The maximum value is the number of species in the sample, which occurs when all species contain an equal number of individuals. Because the index reflects the number of species present (richness) and the relative proportions of each species with a community (evenness), this metric is a diveristy metric. Consider that a community can have the same number of species (equal richness) but manifest a skewed distribution in the proportion of each species (unequal evenness), which would result in different diveristy values.
 
-* What is the Simpson Reciprocal Index for your sample?
-* What is the Simpson Reciprocal Index for your original total community?
+* What is the Simpson Reciprocal Index for your sample?  
+- 4.401  
+
+* What is the Simpson Reciprocal Index for your original total community?  
+- 4.881  
 
 ##### Richness: Chao1 richness estimator
 Another way to calculate diversity is to estimate the number of species that are present in a sample based on the empirical data to give an upper boundary of the richness of a sample. Here, we use the Chao1 richness estimator. 
@@ -627,8 +679,20 @@ So for our previous example community of 3 species with 2, 4, and 1 individuals 
 3 + 1^2/(2*2)
 ```
 
-* What is the chao1 estimate for your sample?
-* What is the chao1 estimate for your original total community?
+```{r}
+#sample
+11 + 5^2/(2*6)
+```
+
+```{r}
+#Community
+17 + 5^2/(2*12)
+```
+
+* What is the chao1 estimate for your sample?  
+- 13.08  
+* What is the chao1 estimate for your original total community?  
+- 18.04  
 
 #### Part 4: Alpha-diversity functions in R
 We've been doing the above calculations by hand, which is a very good exercise to aid in understanding the math behind these estimates. Not surprisingly, these same calculations can be done with R functions. Since we just have a species table, we will use the `vegan` package. You will need to install this package if you have not done so previously. 
@@ -645,32 +709,63 @@ example_data1_diversity =
   spread(name, occurences)
 
 example_data1_diversity
+
+Candycount_sample = read.table(file="Candycount_sample.csv", header=TRUE, sep=",", na.strings=c("NAN", "NA", "."))
+
+candy_diversity =
+  Candycount_sample %>%
+  select(Name, Count) %>%
+  spread(Name, Count)
+
+candy_diversity
+
+Candycount_community= read.table(file="Candycount_community.csv", header=TRUE, sep=",", na.strings=c("NAN", "NA", "."))
+
+candy_diversityC =
+  Candycount_community %>%
+  select(Name, Count) %>%
+  spread(Name, Count)
+
+candy_diversityC
 ```
 
 Then we can calculate the Simpson Reciprocal Index using the `diversity` function.
 ```{r}
 diversity(example_data1_diversity, index="invsimpson")
+
+diversity(candy_diversity, index="invsimpson")
+
+diversity(candy_diversityC, index="invsimpson")
 ```
 
 And we can calculate the Chao1 richness estimator (and others by default) with the the `specpool` function for extrapolated species richness. This function rounds to the nearest whole number so the value will be slightly different that what you've calculated above.
 ```{r}
 specpool(example_data1_diversity)
+
+specpool(candy_diversity)
+
+specpool(candy_diversityC)
 ```
 
 In Project 1, you will also see functions for calculating alpha-diversity in the `phyloseq` package since we will be working with data in that form.
 
 For your sample:
 
-* What are the Simpson Reciprocal Indices for your sample and community using the R function?
-* What are the chao1 estimates for your sample and community using the R function?
-    + Verify that these values match your previous calculations.
+* What are the Simpson Reciprocal Indices for your sample and community using the R function?  
+- They are the same as the ones we calculated beforehand (4.401 and 4.881 for sample and community respectively).  
+* What are the chao1 estimates for your sample and community using the R function?  
+- They are 11 and 17 for sample and community, respectively. These do not match, as in the csv files created for these, only the total number of cells (undistinguished by colour) are given for the count of each species.  
+    + Verify that these values match your previous calculations.  
 
 #### Part 5: Concluding activity
 If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
 
-* How does the measure of diversity depend on the definition of species in your samples?
-* Can you think of alternative ways to cluster or bin your data that might change the observed number of species?
-* How might different sequencing technologies influence observed diversity in a sample?
+* How does the measure of diversity depend on the definition of species in your samples?  
+- Depending on how we decide to group the candy types (based on characteristics such as colour or shape), a species can be made bigger or smaller. The more characteristics we separate the candies by, the higher the diversity we will have (since more species will be created).    
+* Can you think of alternative ways to cluster or bin your data that might change the observed number of species?  
+- We could group the candies based on colour or size, rather than brand.  
+* How might different sequencing technologies influence observed diversity in a sample?  
+- Different sequencing technologies have different post-sequencing processing procedures (such as how they are assembled) and quality controls. These can introduce sequencing errors on different levels, such as biases generated from using different models for calculations.
 
 ### Module 03 references
 Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.

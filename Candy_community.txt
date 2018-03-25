@@ -1,0 +1,53 @@
+Name	Colour	Occurences	Sample_1
+Gummy bear	Red	18	3
+Gummy bear	Light Red	16	5
+Gummy bear	Orange	17	2
+Gummy bear	Yellow	19	3
+Gummy bear	Green	19	4
+Gummy bear	White	16	6
+Gummy sour bears	Red	1	0
+Gummy sour bears	Pink	1	1
+Gummy sour bears	Yellow	1	0
+Gummy Rods	Yellow	26	5
+Gummy Rods	Orange	35	12
+Gummy Rods	Pink	38	10
+Gummy Rods	Green	36	9
+Gummy Rods	Red	39	12
+Large gummy	Yellow (diamond)	1	0
+Large gummy	Yellow (oval)	1	0
+Gummy sour swirls	Blue	2	0
+Gummy sour swirls	Red	1	1
+Gummy spiders	N/A	6	0
+Gummy cokes	N/A	3	0
+Gummy string	Red	2	0
+Gummy string	Orange	1	0
+Gummy string	Yellow	3	0
+Gummy string	Brown	1	0
+Small brick	Red	6	1
+Small brick	Blue	3	1
+Small brick	Green	2	2
+Small brick	Yellow	4	0
+Large brick	Red	1	0
+Large brick	Blue	1	0
+Large brick	Yellow	1	0
+Skittles	Red	33	9
+Skittles	Orange	39	12
+Skittles	Green	49	11
+Skittles	Brown	39	8
+Skittles	Yellow	32	9
+M&M	Blue	40	9
+M&M	Red	29	6
+M&M	Yellow	32	9
+M&M	Green	31	4
+M&M	Brown	30	4
+M&M	Orange	60	17
+Twizzlers	Red	14	0
+Kisses	Silver	16	1
+Gummy balls	Yellow	4	1
+Gummy balls	Red	7	2
+Gummy balls	Green	5	1
+Gummy balls	Orange	5	0
+Gummy balls	Purple	3	2
+Gummy fruit		1	1
+Gummy fruit		1	0
+Mutated	Red	2	1
