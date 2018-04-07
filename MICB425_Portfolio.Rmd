@@ -314,9 +314,19 @@ In conclusion, microbes have played a vital part in providing the appropriate en
 ### Module 01 references
 Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
 
-An example for Whitman and Wiebe (1998) has been included below.
-
-Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578â€“6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
+  - Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578â€“6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)   
+  - Achenbach, J. (2012). Spaceship Earth: A new view of environmentalism. Washington Post (January 2, 2012).  
+  - Falkowski, P. G., Fenchel, T., & Delong, E. F. (2008). The microbial engines that drive Earth's biogeochemical cycles. science, 320(5879), 1034-1039. [link](http://science.sciencemag.org/content/320/5879/1034)  
+  - Canfield, D. E., Glazer, A. N., & Falkowski, P. G. (2010). The evolution and future of Earth's nitrogen cycle. science, 330(6001), 192-196. [link](http://science.sciencemag.org/content/330/6001/192)  
+  - Kasting, J. F., & Siefert, J. L. (2002). Life and the evolution of Earth's atmosphere. Science, 296(5570), 1066-1068. [link](http://science.sciencemag.org/content/296/5570/1066)  
+  - Nisbet, E. G., & Sleep, N. H. (2001). The habitat and nature of early life. Nature, 409(6823), 1083. [link](https://www.nature.com/articles/35059210)  
+  - Leopold, A. (2014). The land ethic. In The Ecological Design and Planning Reader (pp. 108-121). Island Press, Washington, DC. [link](https://link.springer.com/chapter/10.5822/978-1-61091-491-8_12)  
+  - Falkowski, P., Scholes, R. J., Boyle, E. E. A., Canadell, J., Canfield, D., Elser, J., ... & Mackenzie, F. T. (2000). The global carbon cycle: a test of our knowledge of earth as a system. science, 290(5490), 291-296. [link](http://science.sciencemag.org/content/290/5490/291)  
+  - Kallmeyer, J., Pockalny, R., Adhikari, R. R., Smith, D. C., & D'Hondt, S. (2012). Global distribution of microbial abundance and biomass in subseafloor sediment. Proceedings of the National Academy of Sciences, 109(40), 16213-16216. [link](http://www.pnas.org/content/109/40/16213.short)  
+  - Rockström, J., Steffen, W., Noone, K., Persson, Å., Chapin III, F. S., Lambin, E. F., ... & Nykvist, B. (2009). A safe operating space for humanity. nature, 461(7263), 472. [link](https://www.nature.com/articles/461472a)   
+  - Schrag, D. P. (2012). Geobiology of the Anthropocene. Fundamentals of geobiology, 425-436.[link](https://onlinelibrary.wiley.com/doi/10.1002/9781118280874.ch22)   
+  - Waters, C. N., Zalasiewicz, J., Summerhayes, C., Barnosky, A. D., Poirier, C., Galuszka, A., ... & Jeandel, C. (2016). The Anthropocene is functionally and stratigraphically distinct from the Holocene. Science, 351(6269), aad2622. [link](http://science.sciencemag.org/content/351/6269/aad2622)  
+  - Zehnder, A. J. (1988). Biology of anaerobic microorganisms. John Wiley and Sons Inc.. [link](https://www.cabdirect.org/cabdirect/abstract/19911956781)   
 
 References for Essay:  
 1. Canfield, DE, Glazer, AN, Falkowski, PG. 2010. The Evolution and Future of Earth's Nitrogen Cycle. Science. 330:192-196. doi: 10.1126/science.1186120.  
@@ -327,7 +337,7 @@ References for Essay:
 
 
 # Module 02
-Reserve the first level headings (#) for the start of a new Module. This will help to organize your portfolio in an intuitive fashion.  
+
 
 ## Remapping the Body of the World
 
@@ -453,9 +463,11 @@ Specific emphasis should be placed on the process used to find the answer. Be as
 ### Module 02 references
 Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
 
-An example for Whitman and Wiebe (1998) has been included below.
+  - Madsen, E. L. (2005). Identifying microorganisms responsible for ecologically significant biogeochemical processes. Nature Reviews Microbiology, 3(5), 439. [link](https://www.nature.com/articles/nrmicro1151)  
+  - Taupp, M., Mewis, K., & Hallam, S. J. (2011). The art and design of functional metagenomic screens. Current opinion in biotechnology, 22(3), 465-472. [link](https://www.sciencedirect.com/science/article/pii/S0958166911000371)  
+  - Martinez, A., Bradley, A. S., Waldbauer, J. R., Summons, R. E., & DeLong, E. F. (2007). Proteorhodopsin photosystem gene expression enables photophosphorylation in a heterologous host. Proceedings of the National Academy of Sciences, 104(13), 5590-5595. [link](http://www.pnas.org/content/104/13/5590.short)  
+  - Wooley, J. C., Godzik, A., & Friedberg, I. (2010). A primer on metagenomics. PLoS computational biology, 6(2), e1000667. [link](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000667)  
 
-Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578â€“6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
 
 ---
 
@@ -793,7 +805,19 @@ It is necessary to have a clear definition of species because it provides resear
 Microbial evolution due to HGT makes analyzing environmental microbial diversity and defining microbial species a complex task for microbiologists. HGT allows the transfer of genes or operons to related species. This complicates the process of defining a microbial species due to the changing characteristics of species caused by gene acquisition and the selective environment. However, HGT can allow the maintenance of global biogeochemical cycles by propagating important genes of the cycles to other species and by niche differentiation to reduce competition between species. Although HGT renders defining species challenging, it is still essential to have a clear definition of species due to communication purposes between and within the scientific and medical community.  
 
 
-References:  
+### Module 03 references
+Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
+
+  - Torres-Beltrán, M., Hawley, A. K., Capelle, D., Zaikova, E., Walsh, D. A., Mueller, A., ... & Finke, J. (2017). A compendium of geochemical information from the Saanich Inlet water column. Scientific data, 4, 170159. [link](https://www.nature.com/articles/sdata2017159)  
+  - Sogin, M. L., Morrison, H. G., Huber, J. A., Welch, D. M., Huse, S. M., Neal, P. R., ... & Herndl, G. J. (2006). Microbial diversity in the deep sea and the underexplored "rare biosphere". Proceedings of the National Academy of Sciences, 103(32), 12115-12120. [link](http://www.pnas.org/content/103/32/12115.short)  
+  - Welch, R. A., Burland, V., Plunkett, G. I. I. I., Redford, P., Roesch, P., Rasko, D., ... & Stroud, D. (2002). Extensive mosaic structure revealed by the complete genome sequence of uropathogenic Escherichia coli. Proceedings of the National Academy of Sciences, 99(26), 17020-17024. [link](http://www.pnas.org/content/99/26/17020.short)  
+  - Hawley, A. K., Torres-Beltrán, M., Zaikova, E., Walsh, D. A., Mueller, A., Scofield, M., ... & Shevchuk, O. (2017). A compendium of multi-omic sequence information from the Saanich Inlet water column. Scientific data, 4, 170160. [link](https://www.nature.com/articles/sdata2017160)  
+  - Kunin, V., Engelbrektson, A., Ochman, H., & Hugenholtz, P. (2010). Wrinkles in the rare biosphere: pyrosequencing errors can lead to artificial inflation of diversity estimates. Environmental microbiology, 12(1), 118-123. [link](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1462-2920.2009.02051.x)  
+  - Hallam, S. J., Torres-Beltrán, M., & Hawley, A. K. (2017). Monitoring microbial responses to ocean deoxygenation in a model oxygen minimum zone. Scientific data, 4. [link](https://www.nature.com/articles/sdata2017158)  
+  - Callahan, B. J., McMurdie, P. J., & Holmes, S. P. (2017). Exact sequence variants should replace operational taxonomic units in marker-gene data analysis. The ISME journal, 11(12), 2639. [link](https://www.nature.com/articles/ismej2017119)  
+  - Thompson, J. R., Pacocha, S., Pharino, C., Klepac-Ceraj, V., Hunt, D. E., Benoit, J., ... & Polz, M. F. (2005). Genotypic diversity within a natural coastal bacterioplankton population. Science, 307(5713), 1311-1313. [link](http://science.sciencemag.org/content/307/5713/1311)  
+
+References for essay 3:  
 1. Eisen, J. 2007. Environmental shotgun sequencing: Its potential and challenges for studying the hidden world of microbes. Plos Biology. 5:384-388. doi: 10.1371/journal.pbio.0050082.  
 2. Wiedenbeck, J, Cohan, FM. 2011. Origins of bacterial diversity through horizontal genetic transfer and adaptation to new ecological niches. FEMS Microbiol. Rev. 35:957-976. doi: 10.1111/j.1574-6976.2011.00292.x.  
 3. Schimel, J, Schaeffer, S. 2012. Microbial control over carbon cycling in soil. Frontiers in Microbiology. 3:348. doi: 10.3389/fmicb.2012.00348.  
@@ -802,12 +826,5 @@ References:
 6. Blank, CE. 2012. Low rates of lateral gene transfer among metabolic genes define the evolving biogeochemical niches of Archaea through deep time. Archaea. 2012:23. doi: http://dx.doi.org/10.1155/2012/843539.  
 7. Baron, EJ. Classification. In: Baron S, editor. Medical Microbiology. 4th edition. Galveston (TX): University of Texas Medical Branch at Galveston; 1996. Chapter 3. Available from: https://www.ncbi.nlm.nih.gov/books/NBK8406/  
 
-
-### Module 03 references
-Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
-
-An example for Whitman and Wiebe (1998) has been included below.
-
-Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578â€“6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
 
 
