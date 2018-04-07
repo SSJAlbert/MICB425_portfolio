@@ -251,6 +251,51 @@ Discuss the role of microbial diversity and formation of coupled metabolism in d
 * On what basis do the authors consider microbes the guardians of metabolism?  
     - vertical and horizontal gene transfer allows the transfer and spread of genes needed for metabolic pathways. As such, the extinction of individual taxonomic units would not result in the extinction of core machines of the pathway.
     - machines, unlike microbes, can't cycle waste back as substrate  
+
+###Evidence worksheet_03 "The Anthropocene"  
+
+####Learning objectives:   
+
+Evaluate human impacts on the ecology and biogeochemistry of Earth systems.  
+
+####General Questions:  
+
+
+* What were the main questions being asked?  
+
+    - Have humans changed the Earth system so much that the geological deposits are distinct from the Holocene & earlier epochs?  
+    - If so, when did this stratigraphic signal become recognizable worldwide?  
+
+* What were the primary methodological approaches used?  
+    - There was no method, but they reviewed data from previously published papers  
+    - They analyzed the published data to summarize the effects humans have on the environment and also to draw a timeline of events  
+    - Used stratigraphic record to compare to previous epochs  
+
+* Summarize the main results or findings.  
+    - Anthropocene: period marked by humans that changed Earth's history (occurred recently)
+    - invent of widespread and persistent materials; rapid production of those material leaves identifiable fossil and geochemical records (e.g. aluminum, plastics)  
+    - modification of sedimentary processes  
+        - transformed > 50% of Earth's land for: landfills, urban structures, mining, cultivation, etc.  
+        - rising sea levels, eutrophication, coral bleaching, etc.  
+    - N and P in soils doubled due to increased fertilizer use  
+    - reactive N amount increased by 120% relative to Holocene baseline  
+    - Sea-level rise  
+    - Changes in climate and environment exceed Late Holocene changes  
+    - Radiogenic signatures and radionuclides in sediments/ice  
+        - excess ^14^C (suggested as potential marker for start of Anthropocene)  
+        - ^239+240^Pu fallout from nuclear weapons testing  
+    - CO~2~ above 400ppm  
+
+* Do new questions arise from the results?  
+    - What are current innovations/strategies employed to slow down/solve the problems?  
+    - Although the authors listed various changes caused by humans, how would the authors officially define the start of Anthropocene? What is the boundary?  
+    - What other purposes are there to label this era as Anthropocene other than for historic purposes?  
+
+* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+
+    - the author provided sufficient background information and data to reinforce their points  
+    - There were many figures, but they only referred to them briefly or not much at all during the discussion. So it felt like the figures were stand alones (although they are related to the text).  
+    - The figures had good descriptions and were easy to understand.  
     
 
 ### Module_1 essay
@@ -324,7 +369,7 @@ Specific emphasis should be placed on the process used to find the answer. Be as
     - Phylogenetic anchors:
         - link other unknown genes within genome to a taxon
         - collection of genes can be placed into bins of discrete taxonomic groups
-        - onl one copy per cell; ensures no HGT, and genes only appear once in tree
+        - only one copy per cell; ensures no HGT, and genes only appear once in tree
         - Looks at size of bins for relative abundance of taxa
     - Functional anchors:
         - tells what the cell does
@@ -420,84 +465,6 @@ Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Pr
 ## Microbial Species Concepts
 
 ---
-### Problem set_03 "Metagenomics: Genomic Analysis of Microbial Communities"
-#### Learning objectives: 
-Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.  
-*(Reminders for how to format links, etc in RMarkdown are in the RMarkdown Cheat Sheets)*
-
-#### Specific Questions:
-* How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?  
-    - Solden et al. (2016). "The Bright Side of Microbial Dark Matter: Lessons Learned from the Uncultivated Majority". -> 89 Bacterial and 20 Archaeal phyla recogized by small rRNA subunits
-        - only 0.1 - 1% of microbes in environment have been cultured
-    - Youssef et al. (2015). "Assessing the Global Phylum Level Diversity Within the Bacterial Domain: A Review"
-        - 70 bacterial phyla with no cultured representatives (this number may be greater)
-        - previously confined to pure cultures, found 12 bacterial phyla with cultured representatives: Actinobacteria, Bacteroidetes, Chlamydiae, Chlorobi, Chloroflexi, Cyanobacteria, Thermi (Deinococcus-Thermus), Firmicutes, Planctomycetes, Proteobacteria, Spirochaetes, Thermotogae
-  
-
-* How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?  
-    - From EBI Metagenomics (Europe)
-        - 1486 public projects
-        - 86201 samples
-        - soil, marine, grassland, fecal, rumens, agriculture, etc.
-    - JGI (U.S.)
-        - 36715 public projects
-
-* What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)?  
-    - MEGAN (metagenome analyzer)
-        - http://ab.inf.uni-tuebingen.de/software/megan5/download/welcome.html
-        - analyze metagenomes and group using taxonomic analysis
-    - IMG/M (Integrated Microbial Genomes)
-        - http://img.jgi.doe.gov/cgi-bin/m/main.cgi
-        - tool for analyzing publicly available genome/metagenome datasets
-    - MG-RAST (metagenomics analysis server)
-        - https://www.mg-rast.org/
-    - Tag-based sequencing: SSU rRNA -> MOTHUR, QIIME
-    - BLAST (NCBI)
-
-* What is the difference between phylogenetic and functional gene anchors and how can they be used in metagenome analysis?  
-    - Phylogenetic anchors:
-        - link other unknown genes within genome to a taxon
-        - collection of genes can be placed into bins of discrete taxonomic groups
-        - onl one copy per cell; ensures no HGT, and genes only appear once in tree
-        - Looks at size of bins for relative abundance of taxa
-    - Functional anchors:
-        - tells what the cell does
-        - search for gene that codes for protin involved in the terminal steps of a pathway
-        - can count abundance of phylogenetic anchor
-
-* What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?  
-    - binning: grouping reads or contigs and assigning them to operational taxonomic units (OTU)
-        - Taxonomy dependent - classifies DNA fragments by comparing to reference database
-        - Taxonomy independent - reference free binning by clustering similar features (e.g. GC content, etc.)
-    - sequence composition based binning -> genomic signatures
-        - Interpolated Markov Model (IMM)
-    - abundance based binning
-        - Expectation-Maximization (EM) algorithm
-    -Hybrid binning
-        - Lander-Waterman model
-    Sedlar et al. (2016) "Bioinformatics strategies for taxonomy independent binning and visualization of sequence in shotgun metagenomics"
-
-* Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?  
-    - Douterelo et al. (2014). "Methodological approaches for studying the microbial ecology of drinking water distribution systems."
-    - Clone dependent shotgun library
-        - Find functions of proteins from the gene of uncultivable microbes by cloning gene fragments into an expression host
-        - Limitation: gene may not be compatible with the host
-    - Pacific Bioscience
-    - Nanopore
-    - Metatranscriptomes
-        - RT-qPCR:
-            -high sensitivity, can run multiple samples + analyze different genes at once
-            - quantitative representation of changes in gene expression due to different treaments/controls
-            - Limitations:
-                - RNA is highly unstable
-                - DNA extracted needs to be pure
-        - Functional Microarrays:
-            - Overall assessment of gene expression within a microbial community
-            - simultaneous evaluation of many mRNA (rapid)
-            - Limitations:
-                - liquid chromatography/2D gels for protein separation can be tedious
-                - Must use LC-MS (Liquid chromatography-mass spectrometry) to characterize samples
-
 
 ### Problem set_04 "Fine-scale phylogenetic architecture""
 #### Learning objectives: 
@@ -659,10 +626,10 @@ C_Simpsons = 1/ (C_Gummy_bear^2 + C_Gummy_sour_bears^2 + C_Gummy_Rods^2 + C_Larg
 The higher the value is, the greater the diversity. The maximum value is the number of species in the sample, which occurs when all species contain an equal number of individuals. Because the index reflects the number of species present (richness) and the relative proportions of each species with a community (evenness), this metric is a diveristy metric. Consider that a community can have the same number of species (equal richness) but manifest a skewed distribution in the proportion of each species (unequal evenness), which would result in different diveristy values.
 
 * What is the Simpson Reciprocal Index for your sample?  
-- 4.401  
+    - 4.401  
 
 * What is the Simpson Reciprocal Index for your original total community?  
-- 4.881  
+    - 4.881  
 
 ##### Richness: Chao1 richness estimator
 Another way to calculate diversity is to estimate the number of species that are present in a sample based on the empirical data to give an upper boundary of the richness of a sample. Here, we use the Chao1 richness estimator. 
@@ -690,9 +657,9 @@ So for our previous example community of 3 species with 2, 4, and 1 individuals 
 ```
 
 * What is the chao1 estimate for your sample?  
-- 13.08  
+    - 13.08  
 * What is the chao1 estimate for your original total community?  
-- 18.04  
+    - 18.04  
 
 #### Part 4: Alpha-diversity functions in R
 We've been doing the above calculations by hand, which is a very good exercise to aid in understanding the math behind these estimates. Not surprisingly, these same calculations can be done with R functions. Since we just have a species table, we will use the `vegan` package. You will need to install this package if you have not done so previously. 
@@ -752,20 +719,66 @@ In Project 1, you will also see functions for calculating alpha-diversity in the
 For your sample:
 
 * What are the Simpson Reciprocal Indices for your sample and community using the R function?  
-- They are the same as the ones we calculated beforehand (4.401 and 4.881 for sample and community respectively).  
+    - They are the same as the ones we calculated beforehand (4.401 and 4.881 for sample and community respectively).  
 * What are the chao1 estimates for your sample and community using the R function?  
-- They are 11 and 17 for sample and community, respectively. These do not match, as in the csv files created for these, only the total number of cells (undistinguished by colour) are given for the count of each species.  
+    - They are 11 and 17 for sample and community, respectively. These do not match, as in the csv files created for these, only the total number of cells (undistinguished by colour) are given for the count of each species.  
     + Verify that these values match your previous calculations.  
 
 #### Part 5: Concluding activity
 If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
 
 * How does the measure of diversity depend on the definition of species in your samples?  
-- Depending on how we decide to group the candy types (based on characteristics such as colour or shape), a species can be made bigger or smaller. The more characteristics we separate the candies by, the higher the diversity we will have (since more species will be created).    
+    - Depending on how we decide to group the candy types (based on characteristics such as colour or shape), a species can be made bigger or smaller. The more characteristics we separate the candies by, the higher the diversity we will have (since more species will be created).    
 * Can you think of alternative ways to cluster or bin your data that might change the observed number of species?  
-- We could group the candies based on colour or size, rather than brand.  
+    - We could group the candies based on colour or size, rather than brand.  
 * How might different sequencing technologies influence observed diversity in a sample?  
-- Different sequencing technologies have different post-sequencing processing procedures (such as how they are assembled) and quality controls. These can introduce sequencing errors on different levels, such as biases generated from using different models for calculations.  
+    - Different sequencing technologies have different post-sequencing processing procedures (such as how they are assembled) and quality controls. These can introduce sequencing errors on different levels, such as biases generated from using different models for calculations.  
+
+###Evidence worksheet_05 "Extensive mosaic structure"  
+
+####Part 1: Learning objectives:   
+
+Evaluate the concept of microbial species based on environmental surveys and cultivation studies.  
+
+Explain the relationship between microdiversity, genomic diversity and metabolic potential  
+
+Comment on the forces mediating divergence and cohesion in natural microbial communities  
+
+####General Questions:  
+
+* What were the main questions being asked?  
+
+    - Understanding the pathogenecity and eveolutionary diversity of E. coli  
+    - How do different E. coli strains differ at genomic scale and at physiological scale?  
+    - Is there a physiological difference of just a pathological difference?  
+
+* What were the primary methodological approaches used?  
+    - isolated CFT073  
+    - PCR and primer walking experiment  
+    - obtain whole-genome libraries (shotgun and assemble DNA)  
+    - sequenced random clones  
+    - Sanger sequencing  
+    - Annotated genome sequence  
+    - defined ORFs and Blast predicted proteins  
+
+* Summarize the main results or findings.  
+    - 12 distinct types of fimbriae gene in genome of CFT073  
+    - only 39.2% of their combined (nonredundant) set of proteins are common; thus, only 39.2% of genome define them as E. coli; only 3% divergence in the 16S level  
+    - codon variation; GC content; proximity to tRNA (relevant to gene transfer)
+    - difference in disease potential between 0157:H7 and CFT073 is the absence of genes for type III secretion system of phage and plasmid-encoded toxins  
+    - CFT073 genome rich in genes that encode fimbrial adhesins, autotransporters, iron-sequetration systems and phase-switch recombinases  
+    - many islands acquired by different horizontal transfer events in each strain  
+    - 2/3 of island genes shared by EDL933 and CFT073 have unknown functions or are associated with phage or insertion sequence elements  
+
+* Do new questions arise from the results?  
+    - Why is there limited intragenomic rearrangement in vertical evolution?  
+    - What kind of body signaling molecules/features allow pathogenic bacteria to colonize at the specific location?  
+    - Cannot use 16S to fingerprint; why are we sequencing E. coli based on 16S?
+
+* Were there any specific challenges or advantages in understanding the paper (e.g. did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+    - Fig.1 is quite difficult to interpret due to the vast amount of information provided and requires quite a bit of time to analyze    
+    - Fig.3 is a bit confusing to understand due to the small markers and black/white scheme  
+
 
 ### Module_3 essay
 
