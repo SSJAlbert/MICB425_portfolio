@@ -11,35 +11,44 @@ Include **separate** completed versions of this document for Project 1 **and** P
 ### Writing
 
 ### Editing
+Read abstract and edited sentences for better flow.
 
 ## Introduction
-### Literature research
+### Literature research  
 
-### Writing
+Did literature research to write all of introduction.  
 
-### Editing
+### Writing  
+Wrote all of introduction.  
 
+### Editing  
+Fixed sentences according to feedback from group members.
 
 ## Methods
 ### Writing
 
 ### Editing
-
+Fixed R-formatting and added/edited sentences based on feedback.
 
 ## Results
-### Anaysis 
+### Analysis 
 
 ### Figures
 
 ### Writing
 
 ### Editing
-
+Fixed R-formatting. Edited sentences to reduce redundancy and have smoother transitions between paragraphs.
 
 ## Discussion
-### Literature research
+### Literature research  
 
-### Writing
+Found and read papers relevant to our portion of denitrification (nitrate reductase/*narG*) and nitrogen cycle. Formatted all references.  
 
-### Editing
+### Writing  
 
+Wrote a portion of opening paragraph which frames gene of interest.  
+
+### Editing  
+
+Fixed R-formatting. Edited sentences to reduce redundancy between paragraphs written by different people and made transitions between paragraphs less awkward.

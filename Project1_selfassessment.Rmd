@@ -11,36 +11,44 @@ Include **separate** completed versions of this document for Project 1 **and** P
 ### Writing
 
 ### Editing
-
+Fixed errors (capitalization, R-formatting) in abstract based on feedback.
 
 ## Introduction
-### Literature research
+### Literature research  
 
-### Writing
+Did literature research to write all of introduction.  
 
-### Editing
+### Writing  
+Wrote all of introduction.  
 
+### Editing  
+Edited introduction based on feedback. Fixed R-formatting errors.  
 
 ## Methods
 ### Writing
 
 ### Editing
-
+Fixed R-formatting and added/edited sentences based on feedback.
 
 ## Results
-### Anaysis 
+### Analysis 
 
 ### Figures
 
 ### Writing
 
 ### Editing
-
+Fixed R-formatting and added/edited sentences based on feedback. Troubleshooting; found some syntax errors which caused a figure to show up incorrectly. Moved figure codes to relevant locations so it would be easier to refer (and mark) to when mentioned in text.
 
 ## Discussion
-### Literature research
+### Literature research  
 
-### Writing
+Found and read papers relevant to cyanobacteria. Formatted all references.  
 
-### Editing
+### Writing  
 
+Wrote about future directions for the project.  
+
+### Editing  
+
+Fixed R-formatting and added/edited sentences based on feedback.
